@@ -188,6 +188,10 @@ body {
   background-color: white;
 }
 
+.provideSection > .container {
+  border-bottom: 3px solid black;
+}
+
 .provideSection > .container > .textContent {
   width: calc(100% / 2);
   height: 100vh;
@@ -277,7 +281,7 @@ body {
 
 .provideSection > .border {
   width: 100%;
-  height: 3px;
+  padding: 4px;
   background-color: black;
 }
 
@@ -285,7 +289,7 @@ body {
 
 .featureSection {
   width: 100%;
-  margin: 62px 0 0 0;
+  margin: -80px 0 0 0;
   background-color: white;
 }
 
@@ -364,7 +368,7 @@ body {
 .featureSection > .container > .itemContent > .item {
   width: 297px;
   height: 290px;
-  background-color: #ffc;
+  background-color: #f5f0dd;  
   margin: 10px 10px 10px 10px;
 }
 
@@ -372,14 +376,14 @@ body {
 
 .teamSection {
   width: 100%;
-  margin: -29px 0;
+  margin: 0 0 50px 0;
   background-color: white;
 }
 
 .teamSection > .container {
   width: 100%;
   padding: 0;
-  margin: 0 24px 0 0;
+  margin: 55px 25px 0 0;
 }
 
 .teamSection > .container > .textContent {
@@ -394,18 +398,18 @@ body {
   font-size: 42px;
   font-weight: 700;
   font-style: normal;
-  letter-spacing: normal;
   line-height: normal;
   text-transform: uppercase;
 }
 
 .teamSection > .container > .textContent > p {
-  margin: 20px 0 0 14px;
+  margin: 22px 0 0 14px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15.9953px;
   line-height: 28px;
+  opacity: 0.5;
 }
 
 .teamSection > .container > .textContent > .border {
@@ -417,26 +421,276 @@ body {
 
 .teamSection > .container > .imageContent {
   width: 100%;
-  background-color: saddlebrown;
-  margin: 49px 0 0 0;
+  margin: 49px 25px 0 0;
 }
 
 .teamSection > .container > .imageContent > .image {
-  width: calc(100% / 2.75);
+  width: 100%;
+  max-width: 322px;
   height: 458px;
-  background-color: green;
+  background-color: #f5f0dd;
+  transform: translate(10px, 0);
 }
 
+/* Title */
 .teamSection > .container > .imageContent > .text {
   width: 100%;
-  background-color: mediumvioletred;
+  margin: 0 0 0 100px; 
 }
 
+.teamSection > .container >.imageContent > .text > .title {
+  width: 100%;
+  padding: 11px 0;
+  margin: 0 4px;
+}
+
+.teamSection > .container > .imageContent > .text > .title > h1 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.teamSection > .container > .imageContent > .text > .title > span {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+  vertical-align: bottom;
+  letter-spacing: 1px;
+  opacity: 0.7;
+
+}
+/* Title */
+
+/* Paragreph */
+.teamSection > .container > .imageContent > .text > .paragraph {
+  width: 100%;
+  margin: 14px 4px 0 4px;
+}
+
+.teamSection > .container > .imageContent > .text > .paragraph > p {
+  padding: 0 200px 0 2px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15.9953px;
+  line-height: 28px;
+  opacity: 0.5;
+}
+/* Paragreph */
+
+/* List */
 .teamSection > .container > .imageContent > .text > .list {
   width: 100%;
-  height: 228px;
-  background-color: olive;
 }
+
+.teamSection > .container > .imageContent > .text > .list > ul {
+  margin: 38px 0 0 7px;
+}
+
+.teamSection > .container > .imageContent > .text > .list > ul > li {
+  display: flex;
+  flex-direction: row;
+  margin: 0 15px;
+}
+
+.teamSection > .container > .imageContent > .text > .list > ul > li > a {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  opacity: 0.7;
+}
+
+.teamSection > .container > .imageContent > .text > .list > ul > li > p {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  opacity: 0.7;
+}
+/* List */
+
+/* Cards */
+.teamSection > .container > .imageContent > .text > .cards {
+  width: 100%;
+  max-width: 850px;
+  margin: 65px 0
+}
+
+.teamSection > .container > .imageContent > .text > .cards > .card {
+  width: 197px;
+  height: 214px;
+  background-color: #f5f0dd;
+  margin: 0 10px;
+  transition: all 1s;
+}
+
+.teamSection > .container > .imageContent > .text >.cards > .card:hover .content {
+  display: block;
+  transition: all 1s;
+}
+
+.teamSection > .container > .imageContent > .text > .cards > .card > .content {
+  width: 100%;
+  background-color: #7a786e;
+  display: none;
+  transition: all 1s;
+}
+
+.teamSection > .container > .imageContent > .text > .cards > .card > .content > h1 {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  padding: 10px 44px 11px 44px;
+  font-size: 18px;
+}
+/* Cards */
+
+/* ============================================================= */
+
+/* Start Search Section */
+.searchSection {
+  width: 100%;
+  background-color: #f5f0dd;
+}
+
+.searchSection > .container {
+  width: 100%;
+  background-color: #f5f0dd;
+  margin: 50px 0;
+}
+
+/* Tittle */
+.searchSection > .container > .title {
+  width: 100%;
+  padding: 10px 0;
+  margin: 60px 0 0 0;
+}
+
+.searchSection > .container > .title > h1 {
+  color: #fff;
+  font-size: 44px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+/* Tittle */
+
+/* Paragraph */
+.searchSection > .container >.paragraph {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.searchSection > .container > .paragraph > p {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+/* Paragraph */
+
+/* Form */
+.searchSection > .container > form {
+  width: 100%;
+  background-color: #f5f0dd;
+  margin: 42px 0;
+}
+
+.searchSection > .container > form > input {
+  width: 520px;
+  margin: 0 10px 0 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.searchSection > .container > form > input::-webkit-input-placeholder {
+  padding: 0 33px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.searchSection > .container > form > button {
+  width: 214px;
+  margin: 0 0 0 10px;
+  background-color: #ff2d2d;
+  border: none;
+  outline: none;
+  padding: 25px 58px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+/* Form */
+
+/* End Search Section */
+
+/* ============================================================= */
+
+/* Start Email Section */
+.emailSection {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px 0;
+}
+
+.emailSection > .container {
+  width: 100%;
+  max-width: 1545px;
+  background-color: darkgoldenrod;
+  margin: 130px 0;
+}
+
+.emailSection > .container > .text {
+  width: 50%;
+  background-color: darkgreen;
+}
+.emailSection > .container > .text > .title {
+  width: 50%;
+}
+
+.emailSection > .container > .text > .title > h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 43px;
+  font-weight: 700;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+.emailSection > .container > .text > .paragraph {
+  width: 95%;
+  background-color: darkmagenta;
+  margin: 40px 5px;
+}
+
+.emailSection > .container > .text > .paragraph > p {
+  opacity: 0.7;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+}
+
+.emailSection > .container > .border {
+  width: 130px;
+  height: 3px;
+  background: #FF2D2D;
+  margin: 9px 4px;
+}
+/* End Email Section */
 
 /* End Main */
 
