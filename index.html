@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" 
@@ -15,6 +15,7 @@
   </head>
   <body>
     <div class="page display-flex align-items-center flex-direction-column">
+      <div class="head display-flex align-items-center flex-direction-column">
     <div class="container">
       <!-- Start Header -->
       <header
@@ -34,7 +35,8 @@
       <section class="headSection display-flex justify-content-space-between">
         <div class="textContent display-flex justify-content-flex-start flex-direction-column">
           <h1>our strong</h1>
-          <h2>organaisation</h2>
+          <h2 style="transform: translate(-2px, -2px);">
+            organaisation</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eius- 
             <br>
             mod tempor incididunt &#160;ut labore et. ectetur adig ipis cing elit, sed do 
@@ -51,14 +53,17 @@
         </div>
       </div>
       </section>
+    </div>
       <!-- End Head Section -->
 
       <!-- Start Main -->
       <section class="provideSection display-flex justify-content-center align-items-center flex-direction-column">
           <div class="container display-flex justify-content-space-between">
               <div class="textContent">
-                <h1>do you know we can 
-                  provide for you ?</h1>
+                <div class="title display-flex flex-direction-row flex-wrap-wrap">
+                <h1 style="font-size: 42px; margin: 61px 0 0 -2px;">do you</h1><span>know we</span><h2>can</h2>
+                <h1 style="margin: 0 0 0 -2px;">provide</h1><span style="margin: 0 0 0 12px; ">for</span><h2 style="margin: 0 0 0 11px;">you ?</h2>  
+              </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eius-
                     <br>
                     mod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.</p>
@@ -114,7 +119,8 @@
                 <div class="card display-flex align-items-flex-start             flex-direction-column">
                   <img style="
                   margin: 8px 0 0 23px;
-                  width: 42px;" 
+                  width: 43px;
+                  height: 33px;" 
                   src="./public/images/images/Truck_2.png" alt="">
                   <h1 style="
                   margin: 35px 0 0 24px;">
@@ -134,7 +140,9 @@
       <section class="featureSection display-flex justify-content-center">
         <div class="container display-flex align-items-center flex-direction-column">
           <div class="textContent display-flex align-items-center flex-direction-column">
-            <h1>feature products</h1>
+            <div class="title display-flex flex-direction-row">
+            <h1>feature&#160;</h1><span>products</span>
+          </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eius-
               <br>
               mod tempor incididunt ut labore et.</p>
@@ -167,7 +175,9 @@
        <section class="teamSection display-flex align-items-center flex-direction-column">
           <div class="container display-flex flex-direction-column justify-content-space-between">
               <div class="textContent display-flex flex-direction-column">
-                <h1>Meet our team</h1>
+                <div class="title display-flex flex-direction-row">
+                <h1>Meet</h1><span>our</span><h2>team</h2> 
+              </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed
                   <br>
                   dooing eiusmod tempor incididut labore Ui / Ux , print tem-
@@ -289,6 +299,29 @@
             </div>
           </div>
           <div class="border"></div>
+          <div class="contactPart display-flex flex-direction-row">
+          <form action="" class="display-flex flex-direction-column">
+            <div class="fullName">
+              <input type="text" placeholder="Name" style="margin: 0 34px 0 4px;">
+              <input type="text" placeholder="Your Mail" style="margin: 0 0 0 18px;">
+            </div>
+           <div class="submit display-flex flex-direction-column">
+            <input type="text">
+            <button>Send Message</button>
+           </div>
+          </form>
+          <div class="contacts">
+            <div class="text display-flex flex-direction-column">
+              <h1>Contact info</h1>
+              <div class="paragraph">
+              <p style="margin: 32px 0 0 2px;">Jalalabad 24 / A, Ambaarkhana, Sylhet, 
+                Bangladesh</p>
+              <p style="margin: 16px 0 0 1px;">redwan@deviserweb.com</p>
+              <p style="margin: 20px 0 0 2px;">(+88) 017 617 46373</p>
+            </div>
+            </div>
+          </div>
+        </div>
         </div>
       </section>
       <!-- Start Email Section -->
@@ -303,10 +336,11 @@
             <div class="container display-flex justify-content-space-between align-items-center">
             <p>© Copyright @Junaed 2016, All rights reserved.</p>
             <ul class="display-flex justify-content-center align-items-center">
-              <li><i class="fab fa-twitter-square"></i></li>
-              <li><i class="fab fa-linkedin"></i></li>
-              <li><i class="fab fa-google-plus-square"></i></li>
-              <li><i class="fab fa-facebook"></i></li>
+              <div><i class="fab fa-twitter"></i></div>
+              <div><i style="  margin: 9px;
+                " class="fab fa-linkedin-in"></i></div>
+              <div><i style="margin: 5px;" class="fab fa-google-plus-g"></i></div>
+              <div><i style="margin: 5px 11px;" class="fab fa-facebook-f"></i></div>
             </ul>
           </div>
         </footer>

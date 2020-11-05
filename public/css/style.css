@@ -4,11 +4,12 @@
 
 body {
 
-  background-color: #f6f2f2;
+  background-color: #ffffff;
 }
 
 .page {
   width: 100%;
+  background-color: #ffffff
 }
 
 .container {
@@ -16,6 +17,12 @@ body {
   max-width: 1250px;
   margin: 10px 100px;
   padding: 10px 0 0 0;
+}
+
+.head {
+  width: 100%;
+     background-color: #f6f2f2;
+  
 }
 
 .display-flex {
@@ -116,7 +123,7 @@ body {
   text-transform: uppercase;
   line-height: 72px;
   letter-spacing: 1.5px;
-
+  margin: 2px 0 -3px -3px;
 }
 
 .headSection > .textContent > h2 {
@@ -136,7 +143,7 @@ body {
   font-style: normal;
   letter-spacing: normal;
   line-height: 28px;
-  margin: 4.9px 0;
+  margin: 9.6px 0;  
   color: #6f6d6d;
 }
 
@@ -147,6 +154,7 @@ body {
   background-color: #ff2d2d;
   border-radius: 5px;
   cursor: pointer;
+  transform: translate(0px, -10px);
 
 }
 
@@ -196,11 +204,43 @@ body {
   width: calc(100% / 2);
   height: 100vh;
   margin: 20px 0 0 0;
+  transform: translate(-1px, -6px);
 }
 
-.provideSection >.container > .textContent > h1 {
+.provideSection > .container > .textContent > .title {
+  white-space: nowrap;
+}
+
+.provideSection >.container > .textContent > .title > h1 {
   margin: 60px 0 0 0;
-  color: #666;
+  padding: 0;
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.6px;
+  line-height: 55px;
+  text-align: left;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.provideSection >.container > .textContent > .title > span {
+  padding: 0;
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  line-height: 55px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 61px 0 0 12px;
+  opacity: 0.75;
+
+}
+
+.provideSection >.container > .textContent > .title > h2 {
   padding: 0;
   font-family: "Open Sans";
   font-size: 42px;
@@ -210,6 +250,9 @@ body {
   line-height: 55px;
   text-align: left;
   text-transform: uppercase;
+  margin: 61px 0 0 12px;
+  opacity: 0.75;
+
 }
 
 .provideSection > .container >.textContent > p {
@@ -234,13 +277,13 @@ body {
 }
 
 .provideSection > .container > .textContent > .button > p {
-  margin: 8px 65px 8px 65px;
+  margin: 9px 65px 9px 65px;
   color: #ff2d2d;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
-  letter-spacing: normal;
+  letter-spacing: 1.0px;
   line-height: 34.06px;
   white-space: nowrap;
 }
@@ -249,6 +292,7 @@ body {
   width: 50%;
   height: 500px;
   margin: 93px 0;
+  transform: translate(0px, -9px);
 }
 
 .provideSection > .container > .logoContent > .card {
@@ -264,11 +308,11 @@ body {
   font-style: normal;
   letter-spacing: 1.3;
   line-height: normal;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .provideSection > .container > .logoContent > .card > p { 
-  opacity: 0.7;
+  opacity: 0.5;
   color: #000000;
   font-family: "Open Sans";
   font-size: 16px;
@@ -289,8 +333,9 @@ body {
 
 .featureSection {
   width: 100%;
-  margin: -80px 0 0 0;
+  margin: -90px 0 0 0;
   background-color: white;
+  transform: translate(0px 0);
 }
 
 .featureSection > .container > .textContent {
@@ -298,8 +343,25 @@ body {
   margin: 0 0 83px 0;
 }
 
-.featureSection > .container > .textContent > h1 {
-  opacity: 0.8;
+.featureSection > .container > .textContent > .title {
+  margin: 0 0 0 15px;
+}
+
+.featureSection > .container > .textContent > .title > h1 {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.6px;
+  line-height: normal;
+  text-transform: uppercase;
+  opacity: 0.65;
+  transform: translate(5px, 2px);
+}
+
+.featureSection > .container > .textContent > .title > span {
+  opacity: 0.65;
   color: #000000;
   font-family: "Open Sans";
   font-size: 42px;
@@ -308,8 +370,7 @@ body {
   letter-spacing: normal;
   line-height: normal;
   text-transform: uppercase;
-  margin: 0 0 0 25px;
-  opacity: 0.7;
+  transform: translate(5px, 2px);
 }
 
 .featureSection > .container > .textContent > p {
@@ -319,15 +380,14 @@ body {
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: normal;
   line-height: 28px;
   text-align: center;
-  margin: 17px 0 0 33px;
+  margin: 19px 0 0 33px;
 }
 
 .featureSection > .container > .textContent > .border {
   width: 132px;
-  height: 3px;
+  height: 2.3px;
   background-color: #ff2d2d;
   margin: 25px 0 0 30px;
 }
@@ -342,7 +402,7 @@ body {
 
 .featureSection > .container > .listContent > ul > li > a {
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.6;
   color: #000000;
   font-family: "Open Sans", sans-serif;
   font-size: 22px;
@@ -362,11 +422,11 @@ body {
 
 .featureSection > .container > .itemContent {
   width: 102%;
-  margin: 51px 0;
+  margin: 54px 0 0 2px;
 }
 
 .featureSection > .container > .itemContent > .item {
-  width: 297px;
+  width: 298px;
   height: 290px;
   background-color: #f5f0dd;  
   margin: 10px 10px 10px 10px;
@@ -391,7 +451,7 @@ body {
   margin: 0 0 49px 0;
 }
 
-.teamSection > .container > .textContent > h1 {
+.teamSection > .container > .textContent > .title > h1 {
   opacity: 0.7;
   color: #000000;
   font-family: "Open Sans";
@@ -400,6 +460,35 @@ body {
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
+  margin: 0 0 0 0;
+  letter-spacing: 0.6px;
+}
+
+.teamSection > .container > .textContent > .title > span {
+  opacity: 0.7;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0 0 0 10px;
+  letter-spacing: 0.6px;
+}
+
+.teamSection > .container > .textContent > .title > h2 {
+  opacity: 0.7;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0 0 0 12px;
+  letter-spacing: 0.6px;
+
 }
 
 .teamSection > .container > .textContent > p {
@@ -557,6 +646,7 @@ body {
 .searchSection {
   width: 100%;
   background-color: #f5f0dd;
+  padding: 0 0 43px 0;
 }
 
 .searchSection > .container {
@@ -608,6 +698,7 @@ body {
   border: none;
   outline: none;
   border-radius: 5px;
+  padding: 0px 0;
 }
 
 .searchSection > .container > form > input::-webkit-input-placeholder {
@@ -622,7 +713,7 @@ body {
   background-color: #ff2d2d;
   border: none;
   outline: none;
-  padding: 25px 58px;
+  padding: 28px 58px;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   color: #ffffff;
@@ -647,16 +738,15 @@ body {
 .emailSection > .container {
   width: 100%;
   max-width: 1545px;
-  background-color: darkgoldenrod;
-  margin: 130px 0;
+  margin: 80px 0 0 0;
 }
 
 .emailSection > .container > .text {
   width: 50%;
-  background-color: darkgreen;
 }
 .emailSection > .container > .text > .title {
   width: 50%;
+
 }
 
 .emailSection > .container > .text > .title > h1 {
@@ -669,7 +759,6 @@ body {
 
 .emailSection > .container > .text > .paragraph {
   width: 95%;
-  background-color: darkmagenta;
   margin: 40px 5px;
 }
 
@@ -690,6 +779,94 @@ body {
   background: #FF2D2D;
   margin: 9px 4px;
 }
+
+.emailSection > .container > form {
+  width: 50%;
+  margin: 87px 2px;
+}
+
+.emailSection > .container > .contactPart {
+  margin: 68px 0;
+  width: 100%;
+}
+
+.emailSection > .container > form > .fullName {
+  width: 100%;
+}
+
+.emailSection > .container > .contactPart > form > .fullName > input {
+  width: 337px;
+  margin: 0 27px;
+  border: none;
+  outline: none;
+  padding: 25px 0;
+  border-radius: 8px;
+  background-color: #e5e5e5;
+}
+
+.emailSection > .container > .contactPart > form > .fullName > input::-webkit-input-placeholder {
+  padding: 0 53px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+}
+
+.emailSection > .container > .contactPart > form > .submit {
+  margin: 47px 0 0 5px;
+}
+
+.emailSection > .container > .contactPart > form > .submit > input {
+  border: none;
+  outline: none;
+  height: 242px;
+  border-radius: 8px;
+  background-color: #e5e5e5;
+}
+
+.emailSection > .container > .contactPart > form > .submit > button {
+  border: none;
+  outline: none;
+  margin: 49px 0 0 0px;
+  background-color: #FF2D2D;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18.5px;
+  padding: 23px 0;
+  border-radius: 8px;
+
+}
+
+.emailSection > .container > .contactPart > .contacts {
+  width: 37%;
+  margin: 0 0 0 109px;
+  padding: 10px 0;
+  background-color: #2d2d2d;
+}
+
+.emailSection > .container > .contactPart > .contacts > .text {
+  width: 60%;
+  margin: 133px 78px;
+}
+
+.emailSection > .container > .contactPart > .contacts > .text > h1 {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18.5px;
+}
+
+.emailSection > .container > .contactPart > .contacts > .text > .paragraph > p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  margin: 20px 0 0 0;
+  color: #ffffff;
+}
 /* End Email Section */
 
 /* End Main */
@@ -698,15 +875,17 @@ body {
 .pageFooter {
   width: 100%;
   background-color: #333;
+  margin: 28px 0 0 0;
 }
 
 .pageFooter > .container {
   margin: 0 190px;
+  padding: 0;
 }
 
 .pageFooter > .container > p {
   color: #b8b8b8;
-  padding: 46px 0 47px 0;
+  padding: 50px 0 33px 0;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 400;
@@ -718,14 +897,20 @@ body {
   margin: 46px 0 30px 0;
 }
 
-.pageFooter > .container > ul > li {
+.pageFooter > .container > ul > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35x;
+  height: 35px;
   margin: 0 9px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
-.pageFooter > .container > ul > li > i {
-  font-size: 35px;
-  color: white;
-  display: block;
-  border-radius: 50%;
+.pageFooter > .container > ul > div > i {
+  font-size: 20px;
+  color: #313030;
+  margin: 7px;
 }
 /* End Footer */
